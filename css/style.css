@@ -16,8 +16,6 @@ body {
 
 .header {
   background-color: #635854;
-  padding-top: 12px;
-  padding-bottom: 12px;
   border-bottom: 4px solid #3596F5;
 }
 
@@ -38,8 +36,16 @@ body {
 }
 
 .navbar-item {
-  margin-left: 40px;
-  margin-right: 40px;
+  /*  margin-left: 40px;
+  margin-right: 40px; */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar-item:hover {
+  background-color: #3596F5;
 }
 
 .navbar-link {
@@ -67,10 +73,15 @@ body {
   color: #fff;
 }
 
+.navbar-phone:hover {
+  color: #3596F5;
+}
+
 .main {
   max-width: 1280px;
   margin: auto;
   padding-top: 54px;
+  padding-bottom: 99px;
   display: flex;
 }
 
@@ -98,6 +109,10 @@ body {
 }
 
 .home-image path:hover {
+  opacity: 1;
+}
+
+path.current-floor {
   opacity: 1;
 }
 
@@ -132,4 +147,86 @@ body {
   color: #fff;
   padding: 16px 36px;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #D7D7D7;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item {
+  list-style: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.item {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.footer-text {
+  display: block;
+  color: #635854;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #635854;
+}
+
+.footer-phone:hover {
+  color: #3596F5;
+}
+
+.footer-logo {
+  margin-right: 37px;
+  cursor: pointer;
+}
+
+.footer-socials {
+  margin-right: 59px;
+}
+
+.footer-point {
+  color: #635854;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-point:hover {
+  color: #3596F5;
 }
