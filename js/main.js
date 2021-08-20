@@ -3,7 +3,7 @@ $(document).ready(function () {
   var floorPath = $(".home-image path");  //каждый отдельный этаж в svg
   var counterUp = $(".counter-up"); //кнопка увеличения этажа
   var counterDown = $(".counter-down"); //кнопка уменьшения этажа
-
+  
   //функция при наведении ышью на этаж
   floorPath.on("mouseover", function () {
     floorPath.removeClass("current-floor"); //удаляем активный класс у этажей
@@ -39,4 +39,16 @@ $(document).ready(function () {
     }
   });
 
+
+
+  //модальные окна
+  var modal = $(".modal");
+  var viewFlatsButton = $(".view-flats");
+  var modalCloseButton = $(".modal-close-button");
+  floorPath.on('click', toggleModal); //вызов функции при нажатии
+  modalCloseButton.on('click', toggleModal);//вызов функции при нажатии
+  viewFlatsButton.on('click', toggleModal);
+  function toggleModal() {  //функция открыт-закрыть окно
+    modal.toggleClass("is-open");
+  }
 });
